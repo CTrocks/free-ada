@@ -417,10 +417,10 @@ cd $SRC
 
 cd $GCC_DIR
 if [ ! -f .patched ]; then
-    cd gcc/ada
-    patch -p0 < $FILES/$GCC_DIR/finalization_size.patch
+    #cd gcc/ada
+    #patch -p0 < $FILES/$GCC_DIR/finalization_size.patch
 
-    check_error .patched
+    #check_error .patched
 fi
 cd $SRC
 
