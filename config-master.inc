@@ -20,7 +20,7 @@ export PROJECT_NAME=free-ada
 # PROJECT variable.
 # TODO: Put in a check when building cross compilers.
 ################################################################################
-export PROJECT=$PROJECT_NAME-6.4.0
+export PROJECT=$PROJECT_NAME-7.3.0
 
 ################################################################################
 # INSTALL_BASE_DIR - This is where tar needs to change directory to.
@@ -118,8 +118,8 @@ if [ $BINUTILS_SNAPSHOT == "y" ]; then
     export BINUTILS_DIR=binutils-$BINUTILS_SRC_VERSION
 else
     # Release
-    export BINUTILS_VERSION=2.29 # filename version
-    export BINUTILS_SRC_VERSION=2.29 # extracted version
+    export BINUTILS_VERSION=2.31.1 # filename version
+    export BINUTILS_SRC_VERSION=2.31.1 # extracted version
     export BINUTILS_MIRROR=ftp://sourceware.org/pub/binutils/releases
     export BINUTILS_TARBALL=binutils-$BINUTILS_VERSION.tar.bz2
     export BINUTILS_DIR=binutils-$BINUTILS_SRC_VERSION
@@ -148,7 +148,7 @@ export GCC_RELEASE=y
 export GCC_TESTS=y
 
 if [ $GCC_RELEASE == "y" ]; then
-    export GCC_VERSION=6.4.0 # filename version
+    export GCC_VERSION=7.3.0 # filename version
     export GCC_SRC_VERSION=$GCC_VERSION # extracted version, change if different
     export GCC_MIRROR=ftp://ftp.mirrorservice.org/sites/sourceware.org/pub/gcc/releases/gcc-$GCC_VERSION
     export GCC_TARBALL=gcc-$GCC_VERSION.tar.xz
@@ -179,8 +179,8 @@ export GMP_DIR=gmp-$GMP_VERSION
 # MPC
 #export MPC_VERSION=0.8.1
 #export MPC_VERSION=1.0.2
-export MPC_VERSION=1.0.3
-export MPC_MIRROR=http://www.multiprecision.org/mpc/download
+export MPC_VERSION=1.1.0
+export MPC_MIRROR=hhttps://ftp.gnu.org/gnu/mpc
 export MPC_TARBALL=mpc-$MPC_VERSION.tar.gz
 export MPC_DIR=mpc-$MPC_VERSION
 
@@ -197,9 +197,9 @@ export MPC_DIR=mpc-$MPC_VERSION
 #export MPFR_MIRROR=http://www.mpfr.org/mpfr-$MPFR_VERSION
 #export MPFR_PATCHES=http://www.mpfr.org/mpfr-$MPFR_VERSION/allpatches
 #export MPFR_VERSION=3.1.2
-export MPFR_VERSION=3.1.6
-export MPFR_MIRROR=http://mpfr.loria.fr/mpfr-current
-export MPFR_PATCHES=http://mpfr.loria.fr/mpfr-current/allpatches
+export MPFR_VERSION=4.0.1
+export MPFR_MIRROR=http://www.mpfr.org/mpfr-$MPFR_VERSION
+export MPFR_PATCHES=http://www.mpfr.org/mpfr-$MPFR_VERSION/allpatches
 export MPFR_TARBALL=mpfr-$MPFR_VERSION.tar.xz
 export MPFR_DIR=mpfr-$MPFR_VERSION
 
