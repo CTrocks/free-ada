@@ -417,6 +417,7 @@ cd $SRC
 
 cd $GCC_DIR
 if [ ! -f .patched ]; then
+#TODO skipped patch for testing GCC7.3.0
     #cd gcc/ada
     #patch -p0 < $FILES/$GCC_DIR/finalization_size.patch
 

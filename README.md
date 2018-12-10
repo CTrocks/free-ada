@@ -1,4 +1,6 @@
-# Free Ada
+# Free Ada (changed version; work on-going)
+
+# Check for original before attemping to use this, this is not ready!
 
 ## Who did this?
 
